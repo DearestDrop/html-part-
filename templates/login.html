@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="{{ url_for('static', filename='LoginPage.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='global.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='LoginForm.css') }}" rel="stylesheet">
+
+</head>
+<body>
+<div class="loginpage">
+        <section class="nav">
+        </section>
+
+    <div class="navsec">
+        <a class="home1" href="/">Home</a>
+        <a class="my-history1" href="/myhistory">
+            My History
+        </a>
+    </div>
+    <div class="loginsection">
+        <a class="log-in1">Log In </a>
+        <form action="" method="POST">
+        <div class="username2">
+            <input type="text" name="username" placeholder="username"><br><br>
+        </div>
+        <div class="password1">
+            <input type="password" name="password" placeholder="password"><br><br>
+        </div>
+        <a class="do-not-have-container" href="/signuppage">
+        <span class="do-not-have-container1">
+          Do not have an account with us?
+          <span class="sign-up1">Sign up</span>!
+        </span>
+        </a>
+        <h1 class="eraecho6">EraEcho</h1>
+        <Button class="confirm1" href="/main" size="lg">
+            Confirm
+        </Button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

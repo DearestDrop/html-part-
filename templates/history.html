@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{{ url_for('static', filename='MyHistory.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='global.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="myhistory">
+
+    <div class="frame3">
+        <h1 class="eraecho">EraEcho</h1>
+        <div class="frame4">
+            <div class="home-parent">
+                <a class="home">Home</a>
+                <div class="login">Login</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame5">
+        <section class="frame-parent">
+
+            <div class="frame6">
+                <div class="frame7">
+                    <img class="group-icon" alt="" src="../static/public/group.svg"/>
+                </div>
+            </div>
+        </section>
+        <div class="frame8">
+            {{ user.username }}
+            <h1 class="my-history">My History</h1>
+        </div>
+    </div>
+</div>
+<div class="frame9">
+    <div>{{ product[0].asin }}</div>
+    <section class="history-reviews">History Reviews</section>
+    <section class="history-reviews">History Reviews</section>
+</div>
+
+</body>
+</html>

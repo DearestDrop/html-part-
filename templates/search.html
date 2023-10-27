@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{{ url_for('static', filename='SearchResultsPage.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='global.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="top">
+<div class="toptext">EraEcho</div>
+</div>
+    <div class="searchresultspage">
+      <div class="searchbar">
+        <div class="bar">
+        </div>
+          <form action="" method="POST">
+          <input class="seach-items-or" name="keywords" type="text" placeholder="Search Items or Keywords">
+              <button>confirm</button>
+          </form>
+        <div class="results">
+          <section class="searchresults">
+            <div class="result">
+              <h2 class="name-category-brand-container">
+                <span class="name-category-brand-container1">
+                  <p class="name1">Name:  {{ product.title }}</p>
+                  <p class="name1">Category:  {{product.category  }}</p>
+                  <p class="name1">Brand:  {{ product.brand }}</p>
+                </span>
+              </h2>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
