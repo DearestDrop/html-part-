@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EraEcho</title>
+    <link href="{{ url_for('static', filename='global.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='Main.css') }}" rel="stylesheet">
+
+<body>
+<div class="main">
+    <div class="eraecho2">EraEcho</div>
+    <div class="three-tabs">
+        <a class="home2">Home</a>
+        {% if user %}
+            <a class="login1">
+                {{ user.username }}
+            </a>
+            <a class="my-history2" href="/myhistory">
+                My History
+            </a>
+        {% else %}
+            <a class="login1" href="/loginpage">
+                Login
+            </a>
+        {% endif %}
+    </div>
+    <section class="coverpic">
+        <div class="cover">
+            <a class="seach-items-or" href="/searchresult">Seach Items or Keywords</a>
+        </div>
+    </section>
+    <h2 class="top-picks">Top Picks</h2>
+    <h2 class="best-ratings">Best Ratings</h2>
+    <h2 class="you-may-like">You May Like</h2>
+    <h2 class="similar-items">Similar Items</h2>
+    <form action="" method="post">
+        <a class="top-pick-1" target="_self" href="/itemdetails1">
+            <img decoding="async" src="{{ products_1[0].imageURLHighRes }}" alt=""></a></form>
+    <a class="top-pick-2" target="_self" href="/itemdetails2">
+        <img decoding="async" src="{{ products_1[1].imageURLHighRes }}" alt=""></a>
+    <a class="top-pick-3" target="_self" href="/itemdetails3">
+        <img decoding="async" src="{{ products_1[2].imageURLHighRes }}" alt=""></a>
+    <a class="top-pick-4" target="_self" href="/itemdetails4">
+        <img decoding="async" src="{{ products_1[3].imageURLHighRes }}" alt=""></a>
+    <a class="top-pick-5" target="_self" href="/itemdetails5">
+        <img decoding="async" src="{{ products_1[4].imageURLHighRes }}" alt=""></a>
+    <a class="top-pick-6" target="_self" href="/itemdetails6">
+        <img decoding="async" src="{{ products_1[5].imageURLHighRes }}" alt=""></a>
+    <a class="best-rating-1">
+        <img decoding="async" src="{{ products_2[0].imageURLHighRes }}" alt=""></a>
+    <a class="best-rating-2">
+        <img decoding="async" src="{{ products_2[1].imageURLHighRes }}" alt=""></a>
+    <a class="best-rating-3">
+        <img decoding="async" src="{{ products_2[2].imageURLHighRes }}" alt=""></a>
+    <a class="best-rating-4">
+        <img decoding="async" src="{{ products_2[3].imageURLHighRes }}" alt=""></a>
+    <a class="best-rating-5">
+        <img decoding="async" src="{{ products_2[4].imageURLHighRes }}" alt=""></a>
+    <a class="best-rating-6">
+        <img decoding="async" src="{{ products_2[5].imageURLHighRes }}" alt=""></a>
+    <div class="may-like-1"></div>
+    <div class="may-like-2"></div>
+    <div class="may-like-3"></div>
+    <div class="may-like-4"></div>
+    <div class="may-like-5"></div>
+    <div class="may-like-6"></div>
+    <div class="similar-1"></div>
+    <div class="similar-2"></div>
+    <div class=similar-3"></div>
+    <div class="similar-4"></div>
+    <div class="similar-5"></div>
+    <div class="similar-6"></div>
+    <div class="top-1-text">
+        {{ products_1[0].title }}<br>
+        {{ products_1[0].price }}</div>
+    <div class="top-2-text">
+        {{ products_1[1].title }}<br>
+        {{ products_1[1].price }}</div>
+    <div class="top-3-text">
+        {{ products_1[2].title }}<br>
+        {{ products_1[2].price }}</div>
+    <div class="top-4-text">
+        {{ products_1[3].title }}<br>
+        {{ products_1[3].price }}</div>
+    <div class="top-5-text">
+        {{ products_1[4].title }}<br>
+        {{ products_1[4].price }}</div>
+    <div class="top-6-text">
+        {{ products_1[5].title }}<br>
+        {{ products_1[5].price }}</div>
+    <div class="best-1-text">details</div>
+    <div class="best-2-text">details</div>
+    <div class="best-3-text">details</div>
+    <div class="best-4-text">details</div>
+    <div class="best-5-text">details</div>
+    <div class="best-6-text">details</div>
+    <div class="maylike-1-text">details</div>
+    <div class="maylike-2-text">details</div>
+    <div class="maylike-3-text">details</div>
+    <div class="maylike-4-text">details</div>
+    <div class="maylike-5-text">details</div>
+    <div class="maylike-6-text">details</div>
+    <div class="similar-1-text">details</div>
+    <div class="similar-2-text">details</div>
+    <div class="similar-3-text">details</div>
+    <div class="similar-4-text">details</div>
+    <div class="similar-5-text">details</div>
+    <div class="similar-6-text">details</div>
+
+</div>
+
+</body>
+</html>

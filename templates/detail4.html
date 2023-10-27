@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    <link href="{{ url_for('static', filename='ItemDetailsPage.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='global.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="itemdetailspage">
+
+      <div class="frame10">
+        <div class="frame11">
+          <img class="frame-item" alt="" src="{{ product.imageURLHighRes }}" />
+          <div class="frame12">
+            <div class="name-brand-category-container">
+              <p class="name">Name:  {{ product.title }}</p>
+              <p class="name">Brand:  {{ product.brand}}</p>
+              <p class="name">Category:  {{ product.category}}</p>
+              <p class="name">Price:  {{ product.price }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="frame13">
+          <div class="frame14">
+            <div class="reviews">Reviews:</div>
+          </div>
+          <div class="frame14">
+            <section class="reviewer-1-rating-container">
+              <p class="reviewer-1">Reviewer 1:</p>
+              <p class="name">Rating: ......</p>
+              <p class="name">Review: ......</p>
+              <p class="reviewer-1">Reviewer 2:</p>
+              <p class="name">Rating: ......</p>
+              <p class="name">Review: ......</p>
+              <p class="reviewer-1">Reviewer 3:</p>
+              <p class="name">Rating: ......</p>
+              <p class="name">Review: ......</p>
+              <p class="reviewer-1">{`Reviewer 4: `}</p>
+              <p class="name">Rating: ......</p>
+              <p class="name">Review: ......</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
